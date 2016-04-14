@@ -5,7 +5,6 @@ powercons <- read.table("household_power_consumption.txt", sep = ";", header = T
 library(lubridate)
 dts <- dmy_hms(paste(powercons$Date, powercons$Time))
 pcons <- cbind(dts, powercons[3:length(powercons)])
-##pcons <- mutate(powercons, Date = as.Date(powercons$Date, format = "%d/%m/%Y"))
 fpcons <- filter(pcons, Date >= ymd_hms("2007-02-01 00:00:00"), Date <= ymd_hms("2007-02-02 23:59:59"))
 
 ## create plot2
