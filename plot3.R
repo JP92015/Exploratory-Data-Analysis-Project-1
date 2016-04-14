@@ -10,7 +10,7 @@ fpcons <- filter(pcons, Date >= ymd_hms("2007-02-01 00:00:00"), Date <= ymd_hms(
 ## create plot2
 with(fpcons2, plot(Date, Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering"))
 lines(fpcons2$Date, fpcons2$Sub_metering_1, col = "black")
-lines(fpcons2$Date, fpcons2$Sub_metering_2, col = "green")
+lines(fpcons2$Date, fpcons2$Sub_metering_2, col = "red")
 lines(fpcons2$Date, fpcons2$Sub_metering_3, col = "blue")
 legend("topright", lty = c("solid","solid","solid"), col = c("black", "green", "blue"), 
  legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
