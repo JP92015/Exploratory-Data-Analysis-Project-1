@@ -16,5 +16,5 @@ legend("topright", lty = c("solid","solid","solid"), col = c("black", "green", "
  legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.60)
 
  ## save to png file
-dev.copy(png, file = "plot2.png")
+dev.copy(png, file = "plot3.png")
 dev.off()
